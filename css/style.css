@@ -1,0 +1,73 @@
+.row {margin-right:0px !important;}
+.row p {padding:0 14px;}
+.row a {color:#000; text-decoration: underline;}
+.row .container .col-md-12.top {text-align:center;}
+.row .container .col-md-12.top .logo {display:inline-block; margin:7px 0;}
+
+.row.top-ban {text-align:center;}
+.row.top-ban .banner {display:inline-block;}
+.row.top-ban .banner-mob {display:none;} 
+
+.row #formulario input.form-control {border-top:0; border-left:0; border-right:0; border-bottom: 1px solid #000; border-radius: 0; box-shadow:0 0 0; position:relative;}
+.row #formulario select.form-control {border-top:0; border-left:0; border-right:0; border-bottom: 1px solid #000; border-radius: 0; box-shadow:0 0 0;}
+.row #formulario img.img.img-responsive.icon-eye {position: absolute; right: -77px; top: 4px;}
+
+.row #formulario .captcha {max-width: 270px; width: 100%; background-color: #f9f9f9; border:1px solid #e4e4e4; padding: 20px 20px 20px 20px; position:relative; } 
+.row #formulario img.cap-img {position: absolute; right: 10px; top: 11px;}
+
+.row #formulario .checkmark:after {left: 10px; top: 4px; width: 7px; height: 13px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.checkmark {position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: #eee; }
+.checkbox-inline:hover input ~ .checkmark {background-color: #ccc; }
+.row #formulario input:checked ~ .checkmark {background-color: #2196F3; }
+.checkmark:after {content: ""; position: absolute; display: none; }
+.row #formulario input:checked ~ .checkmark:after {display: block;}
+
+.row #formulario .checkmark-two:after {left: 8px; top: 2px; width: 7px; height: 13px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.checkmark-two {position: absolute; top: 0; left: 0; height: 25px; width: 25px; background-color: #fff; border: 2px solid #000 }
+.checkbox-inline:hover input ~ .checkmark-two {background-color: #ccc; }
+.row #formulario input:checked ~ .checkmark-two {background-color: #cb6c02; }
+.checkmark-two:after {content: ""; position: absolute; display: none; }
+.row #formulario input:checked ~ .checkmark-two:after {display: block;}
+
+.checkbox-inline, .radio-inline {position: relative; display: inline-block; padding-left: 31px !important; margin-bottom: 0; /* font-weight: 400; */ vertical-align: middle; cursor: pointer; padding-top: 3px; }
+
+.col-md-6.accept-terms .checkbox-inline {margin: 20px 0; font-size: 13px;}
+
+.row #formulario .btn-avancar {padding: 8px 53px; background-color: #000; color: #fff; border: 0; display: inline-block; margin-top:50px; }
+
+.row.footer {margin-top:50px;}
+.row.footer .bar-duvidas {border-bottom:2px solid #d31820; border-top:2px solid #d31820; text-align:center;}
+.row.footer span.text-01 {font-size: 18px; color: #d31820; }
+.row.footer span.text-02 {font-size: 12px; color: #7a7a7a; }
+
+a.toggle.hc-nav-trigger.hc-nav-1 {text-decoration: none !important;}
+.row .container .col-md-12.top .logo-mob {float:right; display:none; margin:5px 0;}
+
+@media only screen and (max-width:1200px) {
+	.row.footer span.text-01 {
+		font-size: 18px;
+		color: #d31820;
+		width:100%;
+		display:inline-block;
+	}
+	.icon-inte {display:none;}
+}
+
+@media only screen and (max-width:991px) {
+	.row #formulario img.img.img-responsive.icon-eye {
+    	right: 0px;
+		top: 5px;
+	}
+	.row .container .col-md-12.top .logo {display:none;}
+	.row .container .col-md-12.top .logo-mob {display:block;}
+
+}
+
+
+@media only screen and (max-width:400px) {
+	.row.top-ban .banner {display:none;}
+	.row.top-ban .banner-mob {display:block;} 
+
+}
+
+

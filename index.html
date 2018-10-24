@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Teste</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/hc-offcanvas-nav.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="js/jquery-1.11.3.js"></script>
+    <script src="js/hc-offcanvas-nav.js"></script>
+ 
+	
+	<script>
+$(document).ready(function(){
+  $('#cdatnasc').mask('00/00/0000');
+  $('#ccep').mask('00000-000');
+  $('#ccel').mask('(00) 0000-0000');
+  $('#ccoutro').mask('(00) 0000-0000');
+  $('#ccpf').mask('000.000.000-00', {reverse: true});
+});
+</script>
+</head>
+<body>
+    
+<!-- Logo + menu -->
+	<div class="row">
+		<div class="container">
+			<div class="col-md-12 top">
+				<div class="wrapper cf">
+			        <nav id="main-nav">
+				        <ul class="first-nav">
+					        <li class="">Home</li>
+					        <li class="">Regulamento</li>
+					        <li class="">Fale Conosco</li>
+					        <li class="">Ganhadores</li>
+					        <li class="">Politica de Privacidade</li>
+					        <li class="">Cadastro</li>
+					        <li class="">Faça seu login</li>
+				        </ul>
+			        </nav>
+
+		          <a class="toggle" style="text-decoration: none;">
+		            <span></span>
+		          	<p style="margin-left:30px; margin-top:10px">Menu</p>
+		          </a>
+
+		        </div>
+				<img src="images/logo.png" class="img img-responsive logo">
+				<img src="images/logo-mob.png" class="img img-responsive logo-mob">
+			</div>
+		</div>
+	</div>
+
+<!-- Banner -->
+	<div class="row top-ban">
+		<img src="images/banner.jpg" class="img img-responsive banner">
+		<img src="images/banner-mob.jpg" class="img img-responsive banner-mob">
+	</div>
+
+
+	<div class="row">
+		<div class="container" id="formulario">
+		<form id="register-form">
+			<div class="col-md-12" style="text-align:center">
+				<h3>CADASTRE-SE E PARTICIPE</h3>
+			</div>
+
+			<div class="col-md-12">
+				<p><strong>INFORMAÇÕES PESSOAIS</strong></p>
+				
+					
+					<!-- cpf, nome -->
+					<div class="form-group col-md-5">
+						<label for="ccpf">CPF*</label>
+						<input type="text" class="form-control" id="ccpf" placeholder="" required>
+					</div>
+					<div class="form-group col-md-7">
+						<label for="cname">Nome completo*</label>
+						<input type="text" class="form-control" id="cname" placeholder="" required>
+					</div>
+
+					<!-- email, confirmar email -->
+					<div class="form-group col-md-6">
+						<label for="cemail">E-mail*</label>
+						<input type="email" class="form-control" id="cmail" placeholder="" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="cconfemail">Confirmar E-mail*</label>
+						<input type="email" class="form-control" id="cconfemail" placeholder="" required>
+					</div>
+
+					<!-- Data n, celular, outro numero -->
+					<div class="form-group col-md-4">
+						<label for="cdatnasc">Data de Nascimento*</label>
+						<input type="text" class="form-control" id="cdatnasc" placeholder="" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="ccel">Celular*</label>
+						<input type="text" class="form-control" id="ccel" placeholder="" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="ccoutro">Outro telefone</label>
+						<input type="text" class="form-control" id="ccoutro" placeholder="">
+					</div>
+
+					<!-- genero -->
+					<div class="form-group col-md-7">
+						<label for="cgenero">Genero*</label>
+						<select class="form-control" required> 
+							<option></option> 
+							<option>Exemplo 01</option> 
+							<option>Exemplo 02</option> 
+							<option>Exemplo 03</option> 
+							<option>Exemplo 04</option> 
+						</select>
+					</div>
+				
+			</div>
+
+			<div class="col-md-12">
+				<p><strong>INFORMAÇÕES RESIDENCIAIS</strong></p>
+				
+
+					<!-- cep, endereço -->
+					<div class="form-group col-md-5">
+						<label for="ccep">CEP*</label>
+						<input type="text" class="form-control" id="ccep" placeholder="" required>
+					</div>
+					<div class="form-group col-md-7">
+						<label for="cendereco">Endereço*</label>
+						<input type="text" class="form-control" id="cendereco" placeholder="" required>
+					</div>
+
+					<!-- numero, complemento, bairro -->
+					<div class="form-group col-md-4">
+						<label for="cnum">Número*</label>
+						<input type="text" class="form-control" id="cnum" placeholder="" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="ccomplemento">Complemento*</label>
+						<input type="text" class="form-control" id="ccomplemento" placeholder="" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="cbairro">Bairro*</label>
+						<input type="text" class="form-control" id="cbairro" placeholder="" required>
+					</div>
+
+					<!-- cidade, uf -->
+					<div class="form-group col-md-6">
+						<label for="ccidade">Cidade*</label>
+						<input type="text" class="form-control" id="ccidade" placeholder="" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="cuf">UF*</label>
+						<select class="form-control" required> 
+							<option></option> 
+							<option>SP</option> 
+							<option>MG</option> 
+							<option>GO</option> 
+							<option>AC</option> 
+						</select>
+					</div>
+				
+			</div>
+
+			<div class="col-md-12">
+				<p><strong>SENHA (MÍNIMO 8 CARACTERES)<strong></p>
+			
+
+					<!-- senha, rep senha -->
+					<div class="form-group col-md-5">
+						<label for="csenha">Senha*</label>
+						<input type="password" class="form-control" id="csenha" placeholder="" required>
+						<img src="images/icon-eye.jpg" class="img img-responsive icon-eye">
+					</div>
+					<div class="form-group col-md-5 col-md-offset-1">
+						<label for="cconfsenha">Repita a senha*</label>
+						<input type="password" class="form-control" id="cconfsenha" placeholder="" required>
+						<img src="images/icon-eye.jpg" class="img img-responsive icon-eye">
+					</div>
+
+					<!-- captcha -->
+					<div class="col-md-6">
+						<span style="margin:10px 0; display:inline-block; ">Clique na caixa abaixo para prosseguir*</span>
+						<div class="captcha">
+							<label class="checkbox-inline">
+								<input type="checkbox" id="inlineCheckbox1" value="option1"> Não sou um robô	
+								<span class="checkmark"></span>
+							</label>
+							<img src="images/cap.jpg" class="img img-responsive cap-img">
+						</div>
+					</div>
+				
+
+					<!-- termos -->
+					<div class="col-md-6 accept-terms">
+						<label class="checkbox-inline">
+							<input type="checkbox" id="inlineCheckbox1" value="option1"> ACEITO RECEBER MENSAGENS DA PROMOÇÃO.	
+							<span class="checkmark-two"></span>
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" id="inlineCheckbox1" value="option1"> LI E CONCORDO COM OS <a href="javascript:void(0);">TERMOS DE REGULAMENTO</a> DESTA PROMOÇÃO*
+							<span class="checkmark-two"></span>
+						</label>
+					</div>
+					
+					<div class="col-md-12" style="text-align:center">
+						<button type="submit" class="btn-avancar">AVANÇAR</button>
+					</div>
+				
+				
+			</div>
+		</form>
+		
+		</div>
+	</div>
+
+	<div class="row footer">
+		<div class="col-md-12">
+			<div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 bar-duvidas">
+				 <p style="margin-top:10px"><img src="images/duvida.png" class="icon-inte"> <span class="text-01">DUVIDAS FREQUENTES.</span> <span class="text-02">Tudo o que você precisa saber está <a href="javascript:void(0);">aqui.</a></span></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2" style="text-align:center; margin-top:35px;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quasi asperiores perspiciatis illo, quidem eum praesentium ab temporibus quisquam nihil eius laborum accusamus at et ipsum vero voluptatem animi a?
+			</div>
+		</div>
+	</div>
+<script src="js/menu.js"></script>
+<script src="js/jquery.mask.js"></script>
+
+</body>
+</html>
